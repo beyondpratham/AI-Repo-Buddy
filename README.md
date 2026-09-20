@@ -1,4 +1,4 @@
-# AI Repo Buddy 🛠️
+# AI Repo Buddy
 
 **Paste a GitHub URL, get a running app.** AI Repo Buddy is a Streamlit
 assistant that clones a repository, figures out its stack, installs its
@@ -11,7 +11,7 @@ chat layer that reads the README when rule-based parsing isn't enough.
 
 ---
 
-## ⚠️ Security: read before you run this
+## Security: read before you run this
 
 AI Repo Buddy's entire job is to **execute code from repositories you give
 it** — install commands, run commands, and (optionally) commands an LLM
@@ -34,13 +34,13 @@ secrets or host filesystem) rather than on your primary machine. See
 
 ## Features
 
-- 📥 **Auto-clone** — paste any `https://github.com/<owner>/<repo>` URL
-- 🔍 **Stack detection** — Python, Node.js, Go, Rust, Ruby, Java (Maven/Gradle), Docker Compose
-- 📖 **README-aware setup** — parses install/run commands via rules, or via Gemini when a key is configured
-- 📦 **Isolated installs** — Python projects get a per-clone virtual environment (`.venv_bot/`), never your system interpreter
-- 🚀 **Multi-service run** — starts a frontend and backend concurrently when a repo has both, streams live logs, and auto-detects the listening port
-- 🔁 **Self-healing runs** — retries a failed run command and attempts to repair broken file paths before giving up
-- 💬 **Conversational fallback** — ask general questions in the same chat once a Gemini API key is set
+- **Auto-clone** — paste any `https://github.com/<owner>/<repo>` URL
+- **Stack detection** — Python, Node.js, Go, Rust, Ruby, Java (Maven/Gradle), Docker Compose
+- **README-aware setup** — parses install/run commands via rules, or via Gemini when a key is configured
+- **Isolated installs** — Python projects get a per-clone virtual environment (`.venv_bot/`), never your system interpreter
+- **Multi-service run** — starts a frontend and backend concurrently when a repo has both, streams live logs, and auto-detects the listening port
+- **Self-healing runs** — retries a failed run command and attempts to repair broken file paths before giving up
+- **Conversational fallback** — ask general questions in the same chat once a Gemini API key is set
 
 ## Folder structure
 
